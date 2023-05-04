@@ -4,13 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
         Addition addition = new Addition();
-        Division division = new Division();
-        Subtraction subtraction = new Subtraction();
+        addition.setLeft(10);
+        addition.setRight(20);
+//        Division division = new Division();
+//        Subtraction subtraction = new Subtraction();
 
         Calculator calculator = new Calculator();
 
         calculator.calculate(addition);
-        calculator.calculate(division);
-        calculator.calculate(subtraction);
+        System.out.println(addition.getResult());
+//        calculator.calculate(division);
+//        calculator.calculate(subtraction);
     }
 }

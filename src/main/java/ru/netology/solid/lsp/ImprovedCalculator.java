@@ -6,8 +6,8 @@ public class ImprovedCalculator extends Calculator {
     public void calculate(CalculatorOperation operation) {
         if (operation == null) {
             System.out.println("Cannot perform operation");
+            return;
         }
-
         // продолжение улучшений...
     }
 }
